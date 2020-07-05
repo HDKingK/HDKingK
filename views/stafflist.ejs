@@ -1,0 +1,17 @@
+<%- include('partials/header') -%>
+
+<% for (var i = 0; i < stafflist.length; i++) { %>
+    <HR>
+    <div class="alert alert-primary">
+      <H1>
+        PERSONAL PROFILE PAGE ! - 
+          <%= stafflist[i].Name %>
+        </H1>
+    </div>
+    <HR>
+
+    <P><img src="/images/<%= stafflist[i].urlImg%>"></P>
+
+<% } %>
+
+<%- include('partials/footer') -%>

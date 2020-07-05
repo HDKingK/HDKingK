@@ -1,0 +1,43 @@
+<%- include('partials/header') -%>
+
+<HR>
+    <div class="alert alert-warning">
+      <H1>THANH TOÁN </H1>
+    </div>
+<HR>
+
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row">
+                <H1>Chi tiết hóa đơn</H1>
+            </div>
+            
+                <div class="row">
+				<table width = "100%">
+                <% for (var i = 0; i < productlist.length; i++) { %>
+						<tr style="border-width: 5px;border-color: rgb(33, 158, 81);padding-bottom: 15px;">
+							<td>
+								<img width="50px" height="50px" src="/images/...">
+							</td>
+							<td > 
+								<P><%= productlist[i].Name %></P>
+                                <p><b>Price: </b> <%= productlist[i].Price%></p>								
+								<p><b>Num.: </b> <%= productlist[i].Num%> </p>
+							</td>
+						</tr>
+                <% } %>
+					
+				</table>
+				</div>
+					
+
+            
+        </div>
+
+     
+      </div>
+
+
+
+<%- include('partials/footer') -%>

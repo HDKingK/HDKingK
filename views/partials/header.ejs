@@ -1,0 +1,128 @@
+<style>
+	* {
+	  box-sizing: border-box;
+	}
+	
+	body {
+	  font-family: Arial;
+	  padding: 10px;
+	  background: #ffffff;
+	}
+	
+	/* Header/Blog Title */
+	.header {
+	  padding: 30px;
+	  text-align: center;
+	  background: white;
+	}
+	
+	.header h1 {
+	  font-size: 50px;
+	}
+	
+	/* Style the top navigation bar */
+	.topnav {
+	  overflow: hidden;
+	  background-color: gray;
+	}
+	
+	/* Style the topnav links */
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color: #ce9595;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+	
+	/* Change color on hover */
+	.topnav a:hover {
+	  background-color: wheat
+	  color: black;
+	}
+	
+	/* Create two unequal columns that floats next to each other */
+	/* Left column */
+	.leftcolumn {   
+	  float: left;
+	  width: 75%;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+	  float: left;
+	  width: 25%;
+	  background-color: #c07777;
+	  padding-left: 20px;
+	}
+	
+	/* Fake image */
+	.fakeimg {
+	  background-color: rgb(142, 252, 160);
+	  width: 100%;
+	  padding: 20px;
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+	  background-color:gray;
+	  padding: 20px;
+	  margin-top: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	
+	/* Footer */
+	.footer {
+	padding: 20px;
+	text-align: center;
+	background: peachpuff;
+	margin-top: 20px;
+  }
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	  .leftcolumn, .rightcolumn {   
+		width: 100%;
+		padding: 0;
+	  }
+	}
+	
+	/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+	@media screen and (max-width: 400px) {
+	  .topnav a {
+		float: none;
+		width: 100%;
+	  }
+	}
+	</style>
+	<body>
+	  <div class="header">
+		  <h1><img src="/images/header.jpg" width="20%"></h1>
+  
+		</div>
+		
+		<div class="topnav">
+		  <a style="color: black;" href="/login">Login</a>
+	      <a style="color: black;" href="/staffs">Staffs</a>
+	      <a style="color: black;" href="/order">Order</a>
+		  
+		  <a style="color: black;" href="/products">Products</a>
+		  <a style="color: black;" href="/" style="float:right">Home</a>
+		</div>
+  
+  
+  </head>
+  
+  <div class="alert alert-primary" role="alert">
+	
+  </div>
+
+</body>
+
